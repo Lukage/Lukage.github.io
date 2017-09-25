@@ -1,0 +1,189 @@
+/*-----------------------------------------------------------------------Geral-----------------------------------------------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Arial';
+}
+
+body{background-color: #F2F2F2;}
+
+a{text-decoration: none; cursor:pointer;}
+
+ul {list-style: none;}
+
+h2{float: left;}
+
+/*-----------------------------------------------------------------------Separações-----------------------------------------------------------------------*/
+div.Principal{
+	text-align: left;
+	width: 100%;
+	float: left;
+	padding: 4% 20%;
+}
+
+div.Titulo{
+	width: 100%;
+	float: left;
+	padding: 2% 1%;
+	margin-bottom: 3%;
+}
+
+div.Coluna1{
+	width: 30%;
+	float: left;
+	display:inline;
+	padding: 0% 2%;
+	margin-right: 3%;
+}
+
+div.Coluna2{
+	width: 67%;
+	height: 425px;
+	display:inline;
+	float: left;
+	padding: 2% 2%;
+	box-shadow: 2px 2px 5px 0px #BDBDBD;
+	overflow: auto;
+}
+/*-----------------------------------------------------------------------Espaçamentos-----------------------------------------------------------------------*/
+div.CampoBuscar{padding: 2% 0%; width: 100%;}
+div.CampoItensTotais{padding: 4% 0%; width: 100%; justify-content: center; align-items: center; display: flex; flex-direction: row;}
+div.CampoFiltrosAtivos{padding: 15% 0%; width: 100%;}
+div.CampoFiltros{padding: 1% 0%; width: 100%;}
+/*-----------------------------------------------------------------------Título-----------------------------------------------------------------------*/
+h1.Tiluto{
+	text-align: center;
+	font-weight: 800;
+	font-size: 1.2em;
+	width: 100%;
+}
+/*-----------------------------------------------------------------------Pesquisa-----------------------------------------------------------------------*/
+div.Pesquisar{
+	width: 100%;
+	padding: 4% 10%;
+	background-color: #FFF;
+	border-radius: 20px 20px;
+	box-shadow: 0px 5px 20px 0px #A4A4A4;
+}
+
+input.BuscarFocus{
+	color: #000000;
+	font-style: normal;
+	width: 100%;
+}
+input.BuscarBlur{
+	color: #6E6E6E;
+	font-style: italic;
+	width: 100%;
+}
+/*-----------------------------------------------------------------------Total de Itens-----------------------------------------------------------------------*/
+div.NumeroTotalProdutos{
+	font-size: 0.8em;
+	color: #BDBDBD;
+	float: left;
+	text-align: left;
+}
+
+h2.Negrito{
+	font-weight: 600;
+}
+/*-----------------------------------------------------------------------Filtros-----------------------------------------------------------------------*/
+div.Filtros{
+	width: 100%;
+	float: left;
+	padding: 5% 5%;
+	background-color: #D8D8D8;
+	border-radius: 15px 15px;
+}
+
+h2.Filtros{
+	width: 100%;
+	padding: 5% 5%;
+	font-size: 1em;
+}
+
+a.FiltroAtivo{
+	padding-left: 10%;
+	padding-bottom: 2%;
+	float: left;
+	width: 100%;
+	font-size: 0.8em;
+	color: #000000;
+	font-weight: 700;
+}
+a.FiltroDesativo{
+	padding-left: 10%;
+	padding-bottom: 2%;
+	float: left;
+	width: 100%;
+	font-size: 0.8em;
+	color: #A9A9A9;
+	font-weight: 700;
+}
+/*-----------------------------------------------------------------------Caixas de Filtros-----------------------------------------------------------------------*/
+div.FiltrosAtivos{
+	width: 100%;
+	float: left;
+	padding: 0% 5% 10% 0.3%;
+}
+
+div.FiltroAtivo{
+	margin-right: 1%; 
+	display:inline;
+	font-size: 0.8em;
+	text-align: center;
+	padding: 1.5% 2.5%;
+	color: #6E6E6E;
+	font-weight: 600;
+	background-color: #D8D8D8;
+	border-radius: 7px;
+	font-style: italic;
+}
+
+a.CancelarFiltro{
+	color: #6E6E6E;
+}
+/*-----------------------------------------------------------------------Lista de Produtos-----------------------------------------------------------------------*/
+div.Produtos{
+	width: 100%;
+	float: left;
+	margin-top: 3%;
+}
+h2.NomeProduto{
+	width: 80%;
+	display:inline;
+	font-size: 1em;
+}
+h2.ValorProduto{
+	width: 20%;
+	display:inline;
+	font-size: 1em;
+	text-align: right;
+}
+h2.CategoriaProduto{
+	width: 50%;
+	display:inline;
+	font-size: 0.7em;
+	color: #FFD700;
+}
+h2.FreteProduto{
+	width: 50%;
+	display:inline;
+	font-size: 0.7em;
+	text-align: right;
+	padding-bottom: 5px;
+	color: #6B8E23;
+}
+hr { 
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	border-style: inset;
+    border: 0;
+    height: 1px;
+	background-image: linear-gradient(to right, rgba(128,128,128, 0), rgba(128,128,128, 0.75), rgba(128,128,128, 0));
+}
