@@ -1,80 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>A Lojinha</title>
-		<meta name="description" content="Projeto teste de um site com filtro de loja.">
-		<meta name="keywords" content="Projeto, Teste, Lojinha">
-		<meta name="robots" content="index,follow">
-		<meta name="author" content="Lucas Lange Heerdt">
-		<link rel="stylesheet" type="text/css" href="https://Lukage.github.io/css/style.css" media="all" />
+		<title>Pizzaria QI</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 	</head>
-	<body>
-		<!-----------------------------------------------------------------------PRONTO----------------------------------------------------------------------->
+	<body style="background-image: url(img/pizza.png); background-position: bottom;">
 		<div class="Principal">
-			<div class="Titulo">
-				<h1 class="Tiluto">[ A Lojinha ]</h1>
+			<div class="Coluna1"></div>	
+			<div class="Coluna2">
+				<div class="Borda">
+					<div class="Pizza">
+						<div id="Home" class="Aparecer">
+							<div class="TituloHome">PIZZARIA QI</div>
+							<div class="ImgWhatsapp"><img class="Whatsapp" src="img/whatsapp.png"></div>
+							<div class="Whatsapp">(51)0800-601-0000</div>
+							<div class="Endereco"><a href="https://goo.gl/maps/pTMkSo8gmez" class="Endereco" target="_blank">Av. Dorival Cândido Luz de Oliveira 2595<br/>Parada 74 - Gravataí</a></div>
+							<div class="LinkHome1" onclick="mostrarSabores()">SABORES</div>
+							<div class="LinkHome2" onclick="mostrarPedidos()">PEDIDOS</div>
+							<div class="LinkHome3" onclick="mostrarPizzas()">NOSSAS PIZZAS</div>
+						</div>
+						<div id="Sabores" class="Desaparecer">
+							<div class="TituloSabores">SABORES</div>
+							<div class="CaixaListaTamanho"><div id="CaixaLista" class="CaixaLista"></div></div>
+							<div class="LinkSabores1" onclick="mostrarHome()">INÍCIO</div>
+							<div class="LinkSabores2" onclick="mostrarPedidos()">PEDIDOS</div>
+							<div class="LinkSabores3" onclick="mostrarPizzas()">NOSSAS PIZZAS</div>
+						</div>
+						<div id="Pedidos" class="Desaparecer">
+							<div class="TituloPedidos">FAÇA SEU<br/>PEDIDO AQUI</div>
+							<div class="FormularioPedido">
+								<div class="FormularioPedidoS1">
+									Nome:<br/><br/>
+									Telefone:<br/><br/>
+									Endereço:<br/><br/>
+									Sabor:<br/><br/>
+								</div>
+								<div class="FormularioPedidoS2">
+									<input type="text" id="p1" class="campoTexto" onfocus="inserindoResposta(1);" onblur="validarResposta(1);"><br/><br/>
+									<input type="text" id="p2" class="campoTexto" onfocus="inserindoResposta(2);" onblur="validarResposta(2);"><br/><br/>
+									<input type="text" id="p3" class="campoTexto" onfocus="inserindoResposta(3);" onblur="validarResposta(3);"><br/><br/>
+									<select id="p4" class="campoTexto"></select>
+								</div>
+								<div class="FormularioPedidoS3">
+									<div class="FazerPedido" onclick="fazerPedido()">FAZER PEDIDO</div>
+								</div>
+							</div>
+							<div class="LinkPedidos1" onclick="mostrarHome()">INÍCIO</div>
+							<div class="LinkPedidos2" onclick="mostrarSabores()">SABORES</div>
+							<div class="LinkPedidos3" onclick="mostrarPizzas()">NOSSAS PIZZAS</div>
+						</div>
+						<div id="Pizzas" class="Desaparecer">
+							<div class="TituloSabores">NOSSAS<br>PIZZAS</div>
+							<div class="LinkSabores1" onclick="mostrarHome()">INÍCIO</div>
+							<div class="LinkSabores2" onclick="mostrarSabores()">SABORES</div>
+							<div class="LinkSabores3" onclick="mostrarPedidos()">PEDIDOS</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="Coluna1">
-				<div class="CampoBuscar">	
-					<div id="Pesquisar" class="Pesquisar">
-						<input id="Buscar" class="BuscarBlur" type="text"  value="Buscar por..." onkeypress="filtroDeBusca();" onfocus="buscarFocus();" onblur="buscarBlur();" />
-					</div>
-				</div>
-				<div class="CampoItensTotais">
-					<div class="NumeroTotalProdutos">
-						<h2>Encontramos&nbsp;</h2>
-						<h2 id="NumeroTotalProdutosEncontrados" class="Negrito">0</h2>
-						<h2>&nbsp;itens de&nbsp;</h2>
-						<h2 id="NumeroTotalProdutos" class="Negrito">0</h2>
-					</div>
-				</div>
-				<div id="campoFiltrosAtivos" class="CampoFiltrosAtivos">
-					<div id="listaFiltrosAtivos" class="FiltrosAtivos"></div>
-				</div>
-				<div class="CampoFiltros">
-					<div class="Filtros">
-						<h2 class="Filtros">Categoria:</h2></br>
-						<a onclick="filtroEletroF();" class="FiltroDesativo" id="NumeroTotalProdutosEletro"></a>
-						<a onclick="filtroCelularesF();" class="FiltroDesativo" id="NumeroTotalProdutosCelulares"></a>
-						<a onclick="filtroTvF();" class="FiltroDesativo" id="NumeroTotalProdutosTv"></a>
-						<a onclick="filtroPerfumesF();" class="FiltroDesativo" id="NumeroTotalProdutosPerfumes"></a>
-						</br><h2 class="Filtros">Frete:</h2></br>
-						<a onclick="filtroGratisF();" class="FiltroDesativo" id="NumeroTotalProdutosGratis"></a>
-						<a onclick="filtroPagoF();" class="FiltroDesativo" id="NumeroTotalProdutosPago"></a>
-					</div>
-				</div>
-			</div>	
-			<div id="listaProdutos" class="Coluna2">
-				<div id="listaDivProdutos"></div>
-			</div>	
+			<div class="Coluna3"></div>	
 		</div>
-		<!-----------------------------------------------------------------------Templates----------------------------------------------------------------------->
-		<template id="templateListaProdutos">
-			<div class="Produtos">
-				<h2 class="NomeProduto"></hr>
-				<h2 class="ValorProduto"></h2>
-				<h2 class="CategoriaProduto"></h2>
-				<h2 class="FreteProduto"></h2>
-				<hr>
-			</div>
-		</template>
-		<template id="templateListaProdutos2">
-			<div class="Produtos">
-				<h2 class="NomeProduto"></hr>
-				<h2 class="ValorProduto"></h2>
-				<h2 class="CategoriaProduto"></h2>
-				<h2 class="FreteProduto"></h2>
-			</div>
-		</template>
-		<template id="templateListaFlitrosAtivos">
-			<div class="FiltroAtivo">
-				<a class="CancelarFiltro"></a>
-			</div>
-		</template>
-		<template id="templateDivListaFlitrosAtivos"><div id="listaFiltrosAtivos" class="FiltrosAtivos"></div></template>
-		<template id="templateDivListaProdutos"><div id="listaDivProdutos"></div></template>
-		<script type="text/javascript" src="https://Lukage.github.io/js/script.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
