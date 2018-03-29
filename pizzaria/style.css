@@ -10,7 +10,7 @@
 
 body{
 	background-color: #FF0000;
-	background-image: url(../img/pizza.png);
+	background-image: url(https://Lukage.github.io/pizzaria/pizza.png);
 	background-repeat: repeat;
 	background-position: bottom;
 }
@@ -462,7 +462,7 @@ div.LinkPizzas1:hover,div.LinkPizzas2:hover,div.LinkPizzas3:hover{color:#F00;cur
 .lb-loader,.lb-nav{position:absolute;left:0}
 .lb-outerContainer:after{display:table}
 .lb-loader{top:43%;height:25%;width:100%}
-.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../img/carregando.gif) no-repeat}
+.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(https://Lukage.github.io/pizzaria/carregando.gif) no-repeat}
 .lb-nav{top:0;height:100%;width:100%;z-index:10}
 .lb-container>.nav{left:0}
 .lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}
@@ -471,7 +471,7 @@ div.LinkPizzas1:hover,div.LinkPizzas2:hover,div.LinkPizzas3:hover{color:#F00;cur
 	width:34%;
 	left:0;
 	float:left;
-	background:url(../img/anterior.png) left 48% no-repeat;
+	background:url(https://Lukage.github.io/pizzaria/anterior.png) left 48% no-repeat;
 	filter:alpha(Opacity=0);
 	opacity:0;
 	-webkit-transition:opacity .6s;
@@ -484,7 +484,7 @@ div.LinkPizzas1:hover,div.LinkPizzas2:hover,div.LinkPizzas3:hover{color:#F00;cur
 	width:64%;
 	right:0;
 	float:right;
-	background:url(../img/proximo.png) right 48% no-repeat;
+	background:url(https://Lukage.github.io/pizzaria/proximo.png) right 48% no-repeat;
 	filter:alpha(Opacity=0);
 	opacity:0;
 	-webkit-transition:opacity .6s;
@@ -503,7 +503,7 @@ div.LinkPizzas1:hover,div.LinkPizzas2:hover,div.LinkPizzas3:hover{color:#F00;cur
 	float:right;
 	width:30px;
 	height:30px;
-	background:url(../img/fechar.png) top right no-repeat;
+	background:url(https://Lukage.github.io/pizzaria/fechar.png) top right no-repeat;
 	text-align:right;
 	outline:0;
 	filter:alpha(Opacity=70);
