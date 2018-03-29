@@ -1,0 +1,65 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Pizzaria QI</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	</head>
+	<body style="background-image: url(img/pizza.png); background-position: bottom;">
+		<div class="Principal">
+			<div class="Coluna1"></div>	
+			<div class="Coluna2">
+				<div class="Borda">
+					<div class="Pizza">
+						<div id="Home" class="Aparecer">
+							<div class="TituloHome">PIZZARIA QI</div>
+							<div class="ImgWhatsapp"><img class="Whatsapp" src="img/whatsapp.png"></div>
+							<div class="Whatsapp">(51)0800-601-0000</div>
+							<div class="Endereco"><a href="https://goo.gl/maps/pTMkSo8gmez" class="Endereco" target="_blank">Av. Dorival Cândido Luz de Oliveira 2595<br/>Parada 74 - Gravataí</a></div>
+							<div class="LinkHome1" onclick="mostrarSabores()">SABORES</div>
+							<div class="LinkHome2" onclick="mostrarPedidos()">PEDIDOS</div>
+							<div class="LinkHome3" onclick="mostrarPizzas()">NOSSAS PIZZAS</div>
+						</div>
+						<div id="Sabores" class="Desaparecer">
+							<div class="TituloSabores">SABORES</div>
+							<div class="CaixaListaTamanho"><div id="CaixaLista" class="CaixaLista"></div></div>
+							<div class="LinkSabores1" onclick="mostrarHome()">INÍCIO</div>
+							<div class="LinkSabores2" onclick="mostrarPedidos()">PEDIDOS</div>
+							<div class="LinkSabores3" onclick="mostrarPizzas()">NOSSAS PIZZAS</div>
+						</div>
+						<div id="Pedidos" class="Desaparecer">
+							<div class="TituloPedidos">FAÇA SEU<br/>PEDIDO AQUI</div>
+							<div class="FormularioPedido">
+								<div class="FormularioPedidoS1">
+									Nome:<br/><br/>
+									Telefone:<br/><br/>
+									Endereço:<br/><br/>
+									Sabor:<br/><br/>
+								</div>
+								<div class="FormularioPedidoS2">
+									<input type="text" id="p1" class="campoTexto" onfocus="inserindoResposta(1);" onblur="validarResposta(1);"><br/><br/>
+									<input type="text" id="p2" class="campoTexto" onfocus="inserindoResposta(2);" onblur="validarResposta(2);"><br/><br/>
+									<input type="text" id="p3" class="campoTexto" onfocus="inserindoResposta(3);" onblur="validarResposta(3);"><br/><br/>
+									<select id="p4" class="campoTexto"></select>
+								</div>
+								<div class="FormularioPedidoS3">
+									<div class="FazerPedido" onclick="fazerPedido()">FAZER PEDIDO</div>
+								</div>
+							</div>
+							<div class="LinkPedidos1" onclick="mostrarHome()">INÍCIO</div>
+							<div class="LinkPedidos2" onclick="mostrarSabores()">SABORES</div>
+							<div class="LinkPedidos3" onclick="mostrarPizzas()">NOSSAS PIZZAS</div>
+						</div>
+						<div id="Pizzas" class="Desaparecer">
+							<div class="TituloPizzas">NOSSAS<br>PIZZAS</div>
+							<div class="LinkPizzas1" onclick="mostrarHome()">INÍCIO</div>
+							<div class="LinkPizzas2" onclick="mostrarSabores()">SABORES</div>
+							<div class="LinkPizzas3" onclick="mostrarPedidos()">PEDIDOS</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Coluna3"></div>	
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
